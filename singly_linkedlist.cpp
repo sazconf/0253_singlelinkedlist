@@ -92,6 +92,25 @@ class LinkedList
             return true;
         }
 
+        void traverse()
+        {
+            if (listEmpty())
+            {
+                cout << "\nList Kosong\n" << endl;
+                
+            }
+            else
+            {
+                cout<< "\nData didalam list adalah: \n";
+                Node *currentNode = START;
+                while (currentNode != NULL)
+                {
+                    cout << currentNode->noMhs << " ";
+                    currentNode = currentNode->next;
+                }
+            }
+        }
+
 
     
 };

@@ -138,6 +138,52 @@ int main(){
                 case '1':
                     mhs.addNote();
                     break;
+                case '2':
+                    {
+                        if (mhs.listEmpty())
+                        {
+                            cout << endl<< "List Kosong" << endl;
+                            break;
+                        }
+                    }
+                    cout << endl
+                    << "Masukkan Nomor Mahasiswa yang akan dihapus: ";
+                    cin >> nim;
+                    if (mhs.delNode(nim)==false)
+                    {
+                        cout << endl<< "Nomor Mahasiswa tidak ditemukan" << endl;
+                    }
+                    else
+                    {
+                        cout << endl<< "Nomor Mahasiswa "<<nim<<" berhasil dihapus" << endl;
+                    }
+                    break;
+                case '3':
+                    mhs.traverse();
+                    break;
+                case '4':
+                    {
+                        if (mhs.listEmpty() == true)
+                        {
+                            cout << endl<< "List Kosong" << endl;
+                            break;
+                        }
+                        Node *previous, *current;
+                        cout << endl<< "Masukkan Nomor Mahasiswa yang dicari: ";
+                        cin >> nim;
+                        if (mhs.Search(nim, &previous, &current) == false)
+                        {
+                            cout << endl<< "Nomor Mahasiswa tidak ditemukan" << endl;
+                        }
+                        else
+                        {
+                            cout << endl
+                            << "Data ditemukan" << endl;
+                            cout << "Nomor Mahasiswa: " << current->noMhs << endl;
+                            cout<<"\n";
+                        }
+                    }
+                    
             }
 
     }

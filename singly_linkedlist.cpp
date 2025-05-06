@@ -108,6 +108,7 @@ class LinkedList
                     cout << currentNode->noMhs << " ";
                     currentNode = currentNode->next;
                 }
+                cout << endl;
             }
         }
 

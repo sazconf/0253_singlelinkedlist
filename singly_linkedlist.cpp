@@ -2,12 +2,10 @@
 
 using namespace std;
 
-//membuat struct node
-struct Node {
-    int noMhs;
-    Node* Next;
+class Node
+{
+    public:
+        int noMhs;
+        Node *next;
 };
-
-//set value start = null
-Node* start = NULL;
 

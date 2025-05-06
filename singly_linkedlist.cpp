@@ -9,3 +9,9 @@ class Node
         Node *next;
 };
 
+class LinkedList
+{
+        Node *START;
+
+    
+}

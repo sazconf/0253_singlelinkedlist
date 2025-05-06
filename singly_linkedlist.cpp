@@ -128,7 +128,17 @@ int main(){
             cout<< "2. Menghapus data dari dalam list" <<endl;
             cout<< "3. Menampilkan data dari dalam list" <<endl;
             cout<< "4. Mencari data dari dalam list" <<endl;
+            cout<< "5. Keluar" <<endl;
+            cout<< endl
+            <<"Masukkan pilihan anda(1-5): ";
+            cin>>ch;
             
+            switch (ch)
+            {
+                case '1':
+                    mhs.addNote();
+                    break;
+            }
 
     }
 }
